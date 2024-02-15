@@ -44,12 +44,12 @@ class Employee {
 }
 
 class Manager extends Employee {
-  constructor(options: { name: string, department: string, salary: number }) {    
-    super(options.name, options.department, options.salary + 10000);
+  constructor(name: string, department: string, salary: number) {
+    super(name, department, salary + 10000);
   }
 }
 
-const manager = new Manager({ name: "John Doe", department: "Management", salary: 50000 });
+const manager = new Manager("John Doe", "Management", 50000);
 console.log(manager.getEmployeeDetails());
 
 
